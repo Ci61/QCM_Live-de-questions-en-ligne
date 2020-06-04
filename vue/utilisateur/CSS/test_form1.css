@@ -1,0 +1,245 @@
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 10px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+body{
+  color:#eee;
+}
+
+/*-----------------background: linear-gradient(-45deg,#18203f,#4a69bd ) fixed;----------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.container-contact3 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  
+}
+
+.wrap-contact3 {
+  width: 70%;
+  background: linear-gradient(-45deg,#213197,#4a69bd );
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 65px 55px;
+}
+
+.wrap-contact3 legend{
+  color: #eee;
+  padding-top: 10px;
+}
+
+/*titre*/
+.contact3-form + {
+  width: 100%;
+}
+
+.contact3-form-title {
+  display: block;
+  font-size: 5px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+/*bouton*/
+.container-contact3-form-btn {
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+[type="submit"] {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  text-transform: uppercase;
+  
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  height: 50px;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+	
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+/* FRANCINE */
+input[type="submit"]{
+	cursor: pointer;
+}
+
+[type="submit"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+[type="submit"]:hover {
+  color: #fff;
+  background: #213197;
+}
+
+/* FRANCINE */
+label .vrai{
+  background-color: green; 
+}
+
+div.toggle_radio label.vrai {
+	color: green; 
+}
+
+.vrai p{
+  color: green; 
+}
+
+.faux p{
+  color: red; 
+}
+
+/* FRANCINE */
+table#dataTable thead th, table#dataTable tbody td {
+    border: 1px solid #8395a7;
+
+}
+
+.table thead th {
+    vertical-align: middle;
+	text-align: center;
+	color : #191970;
+}
+
+tbody tr td{
+	color : #000;
+	text-align : center;
+}
+
+td.noRep{
+	vertical-align: middle;
+    text-align: center;
+}
+
+.repond{
+	font-weight: 1200;
+	color:#191970;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+  .wrap-contact3 {
+    padding: 72px 15px 65px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+
+
+
+
+

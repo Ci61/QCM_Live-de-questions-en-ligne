@@ -1,0 +1,187 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg,#18203f,#4a69bd ) fixed;
+}
+
+.container{
+    position: relative;
+    width: 70rem;
+}
+
+.container img{
+    width: 70rem;
+}
+
+.switch span{
+    color:#ccc;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.switch span.active{
+    color:#4a69bd;
+}
+
+.panel{
+    width: 30%;
+    margin: 10rem 0 0;
+    position: absolute;
+    right:0;
+    top:0;  
+
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 12rem;
+    margin: 3rem 0 0;
+}
+
+form .input{
+    position: relative;
+    opacity: 1;
+    height: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+    transition: .4s;
+}
+
+.input input{
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: .1rem solid #4a69bd;
+}
+
+.input::after{
+    content:attr(placeholder);
+    position: absolute;
+    left: 0;
+    top: -10%;
+    font-size: 1.2rem;
+    color: #4a69bd;
+    transition: .3s;
+}
+
+.input.focus::after{
+    top:-50%;
+    font-size: .9rem;
+}
+
+.login .input#email,
+.login .input#repeat{
+    margin: 0;
+    height: 0;
+    opacity: 0;
+}
+
+form span{
+    display: block;
+    color:#4a69bd;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+form button{
+    border:none;
+    outline: none;
+    margin: 2.5rem 0 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 3rem;
+    background: linear-gradient(90deg,#0c2461,#4a69bd);
+    box-shadow: 0 0 8px #1936a5;
+    cursor: pointer;
+    color:white;
+}
+
+fieldset {
+  margin: 0;
+  /* padding: 2rem; */
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  /* border: solid 1px #CCC; */
+  min-width: 0;
+  background-color: #FFF;
+}
+
+
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+.toggle {
+  margin: 0 0 1.5rem;
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.toggle input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+.toggle input + label {
+  margin: 0;
+  padding:5px 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 1px #DDD;
+  background-color: #FFF;
+  font-size: 0.8rem;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: border-color .15s ease-out,  color .25s ease-out,  background-color .15s ease-out, box-shadow .15s ease-out;
+  /* ADD THESE PROPERTIES TO SWITCH FROM AUTO WIDTH TO FULL WIDTH */
+  /*flex: 0 0 50%; display: flex; justify-content: center; align-items: center;*/
+  /* ----- */
+}
+.toggle input + label:first-of-type {
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+.toggle input + label:last-of-type {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+.toggle input:hover + label {
+  border-color: #213140;
+}
+.toggle input:checked + label {
+  /* background: linear-gradient(90deg,#0c2461,#4a69bd); */
+  background:#4a69bd;
+  color: #FFF;
+  border-color: none;
+  z-index: 1;
+}
+.toggle input:focus + label {
+  outline-offset: .45rem;
+}
+@media (max-width: 800px) {
+  .toggle input + label {
+    padding:5px 20px;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
